@@ -20,16 +20,16 @@ export default {
       dark_1000: "#192227",
   
       tints_tomato_100: "#750310",
-      tints_tomato_100: "#92000E",
-      tints_tomato_100: "#AB222E",
-      tints_tomato_100: "#AB4D55",
+      tints_tomato_200: "#92000E",
+      tints_tomato_300: "#AB222E",
+      tints_tomato_400: "#AB4D55",
 
       tints_carrot_100: "#FBA94C",
 
       tints_mint_100: "#04D361",
 
       tints_cake_100: "#82F3FF",
-      tints_cake_100: "#065E7C",
+      tints_cake_200: "#065E7C",
       
     }
   }
