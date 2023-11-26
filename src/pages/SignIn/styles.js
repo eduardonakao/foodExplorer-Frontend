@@ -71,10 +71,9 @@ export const Form = styled.form`
         margin-top: 32px;
             justify-content: center;
             align-items: center;
+            text-decoration: none;
+            
         > p {
-            
-            
-            
             color: ${({ theme }) => theme.COLORS.light_100};
             font-family: Poppins;
             font-size: 14px;

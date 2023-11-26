@@ -21,16 +21,19 @@ export function SignUp() {
                 
                 <p>Seu nome</p>
                 <Input 
+                    type="text"
                     placeholder="Exemplo: Maria da Silva"
                 />
 
                 <p>Email</p>
                 <Input 
+                    type="email"
                     placeholder="Exemplo: exemplo@exemplo.com.br"
                 />
 
                 <p>Senha</p>
-                <Input 
+                <Input
+                    type="password"
                     placeholder="No mínimo 6 caracteres"
                 />
 

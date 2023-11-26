@@ -22,11 +22,13 @@ export function SignIn() {
 
                 <p>Email</p>
                 <Input 
+                    type="email"
                     placeholder="Exemplo: exemplo@exemplo.com.br"
                 />
 
                 <p>Senha</p>
                 <Input 
+                    type="password"
                     placeholder="No mínimo 6 caracteres"
                 />
 
