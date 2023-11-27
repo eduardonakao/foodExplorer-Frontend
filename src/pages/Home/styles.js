@@ -14,6 +14,7 @@ export const Banner = styled.div`
     width: 376px;
     height: 120px;
     border-radius: 2.917px;
+    margin-left: 20px;
 
     background: linear-gradient(180deg, #091E26 0%, #00131C 100%);
 
@@ -55,6 +56,8 @@ export const Banner = styled.div`
 `
 
 export const Starter = styled.div`
+    display: flex;
+    flex-direction: column;
     width: 100vw;
     padding-left: 24px;
 
@@ -67,6 +70,11 @@ export const Starter = styled.div`
         margin-top: 62px;
 
         color: ${({ theme }) => theme.COLORS.light_300};
+    }
+
+    .cards {
+        display: flex;
+        gap: 16px;
     }
 `
 

@@ -28,8 +28,8 @@ export default {
 
       tints_mint_100: "#04D361",
 
-      tints_cake_100: "#82F3FF",
-      tints_cake_200: "#065E7C",
+      tints_cake_200: "#82F3FF",
+      tints_cake_100: "#065E7C",
       
     }
   }
