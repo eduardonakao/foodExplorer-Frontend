@@ -3,6 +3,7 @@ import photo from "../../assets/pngegg 1.png";
 import pratro1 from "../../assets/Imagens - Food Explorer-v2/Mask group.png"
 
 import { Card } from "../../components/Card"
+import { Header } from "../../components/Header";
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -16,6 +17,7 @@ export function Home() {
 
     return (
         <Container>
+            <Header/>
             <Banner>
                     <img src={photo} alt="" />
                 <div>

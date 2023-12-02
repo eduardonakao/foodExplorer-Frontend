@@ -1,7 +1,7 @@
 import { Container, Form, Header } from "./styles";
 import { Link } from "react-router-dom";
 
-import Polygon from "../../assets/Polygon 1.svg"
+import Polygon from "../../assets/Polygon.svg"
 
 import { Button } from "../../components/Button";
 import { Input } from "../../components/Input";
