@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { SwiperSlide } from 'swiper/react';
 
 export const Container = styled.div`
     display: flex;
@@ -6,6 +7,40 @@ export const Container = styled.div`
     justify-content: center;
     align-items: center;
     margin-top: 130px;
+
+    .swiper-wrapper {
+        gap: 45px;
+
+        @media (min-width: 768px) {
+            gap: 15px;
+        }   
+    }
+
+    .swiper-button-next{
+        display: none;
+    }
+    .swiper-button-prev{
+        display: none;
+    }
+
+    .swiper-button- {
+        display: none;
+    }
+
+        .mySwiper {
+
+            @media (min-width: 768px) {
+                width: 65%;
+                    
+                .swiper-button-next{
+                    display: block;
+                }
+                .swiper-button-prev{
+                    display: block;
+                }
+
+    }
+}   
 `
 
 export const Banner = styled.div`
@@ -18,10 +53,32 @@ export const Banner = styled.div`
 
     background: linear-gradient(180deg, #091E26 0%, #00131C 100%);
 
+    @media (min-width: 768px) {
+        width: 768px;
+        height: 260px;
+        margin-top: 164px;
+    }
+    @media (min-width: 1120px) {
+        width: 1120px;
+        height: 260px;
+        margin-top: 164px;
+    }
+
     > img {
         width: 191px;
         height: 149px;
         margin-left: -33px;
+
+        @media (min-width:1120px) {
+            width: 632px;
+            height: 406px;
+        }
+
+        @media (min-width:768px) {
+            width: 380px;
+            height: 310px;
+        }
+
         }
 
     > div {
@@ -38,6 +95,14 @@ export const Banner = styled.div`
             line-height: 140%;
 
             color: ${({ theme }) => theme.COLORS.light_300};
+
+            @media (min-width:768px) {
+                font-size: 35px;
+        }
+
+            @media (min-width:1120px) {
+                    font-size: 40px;
+            }
         }
 
         > p {
@@ -48,11 +113,18 @@ export const Banner = styled.div`
             line-height: 140%;
 
             color: ${({ theme }) => theme.COLORS.light_300};
-         }
 
-    }
+            @media (min-width:768px) {
+                font-size: 12px;
+                margin-bottom: 60px;
+            }
+            @media (min-width:1120px) {
+                    font-size: 16px;
+                    margin-bottom: 60px;
+            }
+        }
 
-    
+    }  
 `
 
 export const Starter = styled.div`
@@ -60,7 +132,7 @@ export const Starter = styled.div`
     flex-direction: column;
     width: 100vw;
     padding-left: 24px;
-
+    
     > h3 {
         font-family: Poppins;
         font-size: 18px;
@@ -70,28 +142,13 @@ export const Starter = styled.div`
         margin-top: 62px;
 
         color: ${({ theme }) => theme.COLORS.light_300};
+
+        @media (min-width: 768px) {
+        margin-left: 300px;
     }
 
-    .cards {
-        display: flex;
-        gap: 16px;
     }
-`
-
-export const MainCourses = styled.div`
-    width: 100vw;
-    padding-left: 24px;
-
-    > h3 {
-        font-family: Poppins;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 140%;
-        margin-top: 24px;
-
-        color: ${({ theme }) => theme.COLORS.light_300};
-    }
+    
 `
 
 export const Dessert = styled.div`
@@ -107,5 +164,29 @@ export const Dessert = styled.div`
         margin-top: 24px;
 
         color: ${({ theme }) => theme.COLORS.light_300};
+
+        @media (min-width: 768px) {
+        margin-left: 300px;
+    }
+    }
+`
+
+export const Drinks = styled.div`
+    width: 100vw;
+    padding-left: 24px;
+
+    > h3 {
+        font-family: Poppins;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140%;
+        margin-top: 24px;
+
+        color: ${({ theme }) => theme.COLORS.light_300};
+
+        @media (min-width: 768px) {
+        margin-left: 300px;
+    }
     }
 `

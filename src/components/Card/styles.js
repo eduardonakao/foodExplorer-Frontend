@@ -10,6 +10,10 @@ export const Container = styled.div`
     height: 292px;
     margin-top: 24px;
 
+    border-radius: 8px;
+    border: 1px solid ${({ theme }) => theme.COLORS.dark_300};
+    background: ${({ theme }) => theme.COLORS.dark_200};
+
     > img:first-child {
         width: 24px;
         height: 22px;

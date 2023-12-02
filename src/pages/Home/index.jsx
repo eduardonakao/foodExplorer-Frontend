@@ -1,10 +1,19 @@
-import { Container, Banner, Starter, MainCourses, Dessert } from "./styles";
-import photo from "../../assets/pngegg 2.png";
+import { Container, Banner, Starter, Dessert, Drinks } from "./styles";
+import photo from "../../assets/pngegg 1.png";
 import pratro1 from "../../assets/Imagens - Food Explorer-v2/Mask group.png"
 
 import { Card } from "../../components/Card"
 
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+
+import { Navigation } from 'swiper/modules';
+
 export function Home() {
+
     return (
         <Container>
             <Banner>
@@ -15,29 +24,127 @@ export function Home() {
                 </div>
                 
             </Banner>
-
-            
-
             
             <Starter>
-                <h3>Entradas</h3>
+                <h3>Pratos Principais</h3>
                 <div className="cards">
-                    <Card src={pratro1} name="Salada Ravanello >" price="49,97" value="01"/>
-                    <Card src={pratro1} name="Salada Ravanello >" price="49,97" value="01"/>
-                    <Card src={pratro1} name="Salada Ravanello >" price="49,97" value="01"/>
-                    <Card src={pratro1} name="Salada Ravanello >" price="49,97" value="01"/>
-                </div>
+
+                    <Swiper
+                        cssMode={true}
+                        breakpoints={{
+                            370: {
+                                slidesPerView: 2,
+                            },
+                            768: {
+                                slidesPerView: 4,
+                            }
+                        }}
+                        navigation= {true}
+                        modules={[Navigation]}
+                        className="mySwiper"
+                    >
+                        <SwiperSlide>
+                            <Card src={pratro1} name="Salada Ravanello >" price="49,97" value="01"/>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <Card src={pratro1} name="Salada Ravanello >" price="49,97" value="01"/>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <Card src={pratro1} name="Salada Ravanello >" price="49,97" value="01"/>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <Card src={pratro1} name="Salada Ravanello >" price="49,97" value="01"/>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <Card src={pratro1} name="Salada Ravanello >" price="49,97" value="01"/>
+                        </SwiperSlide>
+                    </Swiper>
+                    
+                </div> 
             </Starter>
 
             
-            <MainCourses>
-                <h3>Pratos Principais</h3>
-            </MainCourses>
-            
-            
             <Dessert>
                 <h3>Sobremesas</h3>
+
+                <div className="cards">
+
+                    <Swiper
+                        cssMode={true}
+                        breakpoints={{
+                            370: {
+                                slidesPerView: 2,
+                            },
+                            768: {
+                                slidesPerView: 4,
+                            }
+                        }}
+                        navigation= {true}
+                        modules={[Navigation]}
+                        className="mySwiper"
+                    >
+                        <SwiperSlide>
+                            <Card src={pratro1} name="Salada Ravanello >" price="49,97" value="01"/>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <Card src={pratro1} name="Salada Ravanello >" price="49,97" value="01"/>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <Card src={pratro1} name="Salada Ravanello >" price="49,97" value="01"/>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <Card src={pratro1} name="Salada Ravanello >" price="49,97" value="01"/>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <Card src={pratro1} name="Salada Ravanello >" price="49,97" value="01"/>
+                        </SwiperSlide>
+                    </Swiper>
+                    
+                </div> 
             </Dessert>
+            
+            
+            <Drinks>
+                <h3>Bebidas</h3>
+
+                <div className="cards">
+
+                    <Swiper
+                        cssMode={true}
+                        breakpoints={{
+                            370: {
+                                slidesPerView: 2,
+                            },
+                            768: {
+                                slidesPerView: 4,
+                            }
+                        }}
+                        navigation= {true}
+                        modules={[Navigation]}
+                        className="mySwiper"
+                    >
+                        <SwiperSlide>
+                            <Card src={pratro1} name="Salada Ravanello >" price="49,97" value="01"/>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <Card src={pratro1} name="Salada Ravanello >" price="49,97" value="01"/>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <Card src={pratro1} name="Salada Ravanello >" price="49,97" value="01"/>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <Card src={pratro1} name="Salada Ravanello >" price="49,97" value="01"/>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <Card src={pratro1} name="Salada Ravanello >" price="49,97" value="01"/>
+                        </SwiperSlide>
+                    </Swiper>
+                    
+                </div> 
+            </Drinks>
+
+
+            
 
         </Container>
     )
