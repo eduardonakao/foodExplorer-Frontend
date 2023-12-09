@@ -4,6 +4,7 @@ import pratro1 from "../../assets/Imagens - Food Explorer-v2/Mask group.png"
 
 import { Card } from "../../components/Card"
 import { Header } from "../../components/Header";
+import { TextButton } from "../../components/TextButton";
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 

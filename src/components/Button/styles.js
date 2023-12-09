@@ -9,6 +9,7 @@ export const Container = styled.button`
     padding: 12px 32px;
     border-radius: 5px;
     border: none;
+    gap: 8px;
 
     background: ${({ theme }) => theme.COLORS.tints_tomato_100};
     color: ${({ theme }) => theme.COLORS.light_100};

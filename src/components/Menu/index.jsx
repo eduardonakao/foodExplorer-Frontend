@@ -1,10 +1,9 @@
 import { Container } from "./styles";
 
-export function Input({ ...rest }) {
+export function Menu() {
     return (
         <Container>
-            <img {...rest} />
-            <input  {...rest}/>
+            
         </Container>
     )
 }
