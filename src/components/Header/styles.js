@@ -1,12 +1,10 @@
 import styled from "styled-components";
 
-
-
-
 export const Container = styled.header`
     display: flex;
     justify-content: space-between;
     padding: 28px;
+    margin-bottom: 44px;
 
     width: 100vw;
     height: 114px;
@@ -34,6 +32,10 @@ export const Container = styled.header`
             > img {
                 margin-left: 190px;
                 position: absolute;
+
+                @media (max-width: 768px) {
+                    display: none;
+                }
             }
 
             > input {

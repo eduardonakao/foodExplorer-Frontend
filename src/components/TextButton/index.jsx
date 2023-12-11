@@ -6,7 +6,6 @@ export function TextButton({ text }) {
             <button>
                 {text}
             </button>
-            
         </Container>
     )
 }
